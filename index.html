@@ -2,17 +2,17 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <h1>Espaço Aura 🎉</h1>
+  <title>espacoaura.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Espaço Aura - o ambiente perfeito para festas inesquecíveis.">
+  <meta name="description" content="espacoaura.com - o ambiente perfeito para festas inesquecíveis.">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family:'Montserrat',sans-serif;
-      background-color:#f5f5f5; /* cor suave */
+      background-color:#f5f5f5;
       color:#333;
       margin:0;
-      scroll-behavior: smooth; /* rolagem suave */
+      scroll-behavior: smooth;
     }
     header {position:fixed;top:0;width:100%;background:#222;padding:15px;text-align:center;z-index:1000;}
     header a {color:#fff;margin:0 15px;text-decoration:none;font-weight:600;}
@@ -57,18 +57,18 @@
   </header>
 
   <div class="banner" id="topo">
-    <h1>Espaço Aura 🎉</h1>
+    <h1>espacoaura.com</h1>
     <p>O ambiente perfeito para sua festa inesquecível.</p>
   </div>
 
   <section id="galeria">
     <h2>📸 Galeria</h2>
     <div class="gallery">
-      <img src="ims2.jpeg" alt="Foto 1 - Espaço Aura">
-      <img src="imsss.jpeg" alt="Foto 2 - Espaço Aura">
-      <img src="ims.jpeg" alt="Foto 3 - Espaço Aura">
+      <img src="ims2.jpeg" alt="Piscina - Espaço Aura">
+      <img src="ims.jpeg" alt="Foto 2 - Espaço Aura">
+      <img src="aura.jpeg" alt="Foto 3 - Espaço Aura">
       <img src="ims3.jpeg" alt="Foto 4 - Espaço Aura">
-      <img src="aura.jpeg" alt="Foto 5 - Espaço Aura">
+      <img src="imsss.jpeg" alt="Foto 5 - Espaço Aura">
       <img src="imss.jpeg" alt="Foto 6 - Espaço Aura">
     </div>
   </section>
@@ -110,12 +110,20 @@ Detalhes: ${detalhes}`;
     <p><strong>Telefone:</strong> (61) 98463-2242</p>
     <p><strong>Endereço:</strong> QD 153, LT 13, Parque Estrela Dalva XIII, Santo Antônio do Descoberto - GO</p>
     <div>
+      <a href="https://www.google.com/maps/place/QD+153,+LT+13,+Parque+Estrela+Dalva+XIII,+Santo+Antônio+do+Descoberto+-+GO" target="_blank">
+        <button class="btn location">📍 Ver Localização</button>
+      </a>
       <a href="https://wa.me/5561984632242" target="_blank"><button class="btn whatsapp">📱 WhatsApp</button></a>
       <a href="https://www.instagram.com/esp.aura13" target="_blank"><button class="btn instagram">📸 Instagram</button></a>
-      <a href="https://www.google.com/maps/place/QD+153,+LT+13,+Parque+Estrela+Dalva+XIII,+Santo+Antônio+do+Descoberto+-+GO" target="_blank"><button class="btn location">📍 Ver Localização</button></a>
     </div>
   </section>
 
-  <footer><p>&copy; 2026 Espaço Aura 🎉 - Todos os direitos reservados</p></footer>
+  <footer><p>&copy; 2026 espacoaura.com 🎉 - Todos os direitos reservados</p></footer>
+
+  <script>
+    window.onload = function() {
+      window.scrollTo(0, 0); // força abrir no topo
+    };
+  </script>
 </body>
 </html>

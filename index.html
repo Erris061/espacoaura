@@ -14,6 +14,17 @@
       color:#fff;
       margin:0;
     }
+    /* Ajuste para celulares */
+    @media (max-width: 768px) {
+      body {
+        background-attachment: scroll;
+        background-position: center top;
+        background-size: contain;
+      }
+      section {
+        background: rgba(0,0,0,0.85);
+      }
+    }
     header {position:fixed;top:0;width:100%;background:rgba(0,0,0,0.8);padding:15px;text-align:center;z-index:1000;}
     header a {color:#fff;margin:0 15px;text-decoration:none;font-weight:600;}
     header a:hover {color:#ff4da6;}
@@ -23,7 +34,7 @@
     section {background:rgba(0,0,0,0.7);padding:40px;border-radius:12px;margin:80px auto;max-width:1000px;}
     section h2 {color:#ff4da6;text-align:center;margin-bottom:20px;font-size:32px;font-family:'Bebas Neue',sans-serif;}
     .gallery {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;}
-    .gallery img {width:100%;border-radius:12px;border:2px solid #00e5ff;transition:.3s;}
+    .gallery img {width:100%;border-radius:12px;border:2px solid #00e5ff;transition:.3s;object-fit:cover;height:220px;}
     .gallery img:hover {transform:scale(1.05);}
     .contact {text-align:center;}
     .contact p {margin:8px 0;}

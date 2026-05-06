@@ -2,169 +2,105 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <title>Espaço Aura 🎉</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Espaço de Eventos Premium</title>
-  <meta name="description" content="Espaço de eventos sofisticado para casamentos, festas corporativas e celebrações exclusivas. Reserve já e viva momentos inesquecíveis.">
-  <!-- Fontes premium -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Espaço Aura - o ambiente perfeito para festas inesquecíveis.">
+  <!-- Fonte radical + fonte clean -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {margin:0; padding:0; box-sizing:border-box;}
-
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #111; /* fundo escuro */
-      color: #333;
-      line-height: 1.6;
+    body {font-family:'Montserrat',sans-serif;background:#111;color:#eee;margin:0;}
+    header {position:fixed;top:0;width:100%;background:#000;padding:15px;text-align:center;z-index:1000;}
+    header a {color:#fff;margin:0 15px;text-decoration:none;font-weight:600;}
+    header a:hover {color:#ff4da6;}
+    .banner {
+      background:linear-gradient(135deg,#ff4da6,#00e5ff);
+      text-align:center;padding:100px 20px;color:#fff;
     }
-
-    header {
-      background: linear-gradient(rgba(255,77,166,0.7), rgba(0,229,255,0.7)), url('img/foto-piscina1.jpg') center/cover;
-      height: 70vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      border-bottom: 8px solid #ff4da6;
+    .banner h1 {
+      font-family:'Bebas Neue',sans-serif;
+      font-size:64px;letter-spacing:3px;text-transform:uppercase;
     }
-    header h1 {
-      font-family: 'Cinzel Decorative', serif;
-      font-size: 3em;
-      padding: 20px;
-      border-radius: 15px;
-      border: 3px solid #00e5ff;
-      letter-spacing: 2px;
-      background-color: rgba(0,0,0,0.5);
-    }
-
-    section {
-      padding: 50px 20px;
-      max-width: 1200px;
-      margin: auto;
-      background-color: #f9f9f9;
-      border-radius: 12px;
-      margin-bottom: 30px;
-    }
-    h2 {
-      font-family: 'Cinzel Decorative', serif;
-      font-size: 2.2em;
-      color: #ff4da6;
-      margin-bottom: 20px;
-      text-align: center;
-      letter-spacing: 1px;
-    }
-    p {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 1.1em;
-      color: #333;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 20px;
-      border: 3px solid #00e5ff;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.5);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 12px 20px rgba(255,77,166,0.7);
-    }
-
-    .contact {
-      background: #f9f9f9;
-      padding: 40px;
-      border-radius: 15px;
-      text-align: center;
-      border: 6px solid #00e5ff;
-    }
-    .contact p {
-      margin: 10px 0;
-      font-size: 1.1em;
-      color: #333;
-    }
-    .buttons {
-      margin: 20px 0;
-    }
+    .banner p {font-size:20px;color:#eee;margin-top:10px;}
+    section {background:#f9f9f9;padding:40px;border-radius:12px;margin:80px auto;max-width:1000px;}
+    section h2 {color:#ff4da6;text-align:center;margin-bottom:20px;font-size:32px;font-family:'Bebas Neue',sans-serif;}
+    .gallery {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;}
+    .gallery img {width:100%;border-radius:12px;border:2px solid #00e5ff;transition:.3s;}
+    .gallery img:hover {transform:scale(1.05);}
+    .contact {text-align:center;}
+    .contact p {margin:8px 0;}
     .btn {
-      border: none;
-      padding: 14px 22px;
-      font-size: 1.1em;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      margin: 10px;
-      font-family: 'Montserrat', sans-serif;
-      color: white;
-      font-weight: 600;
-      letter-spacing: 0.5px;
+      border:none;padding:14px 24px;border-radius:30px;margin:8px;
+      font-weight:600;cursor:pointer;transition:.3s;box-shadow:0 0 10px rgba(0,0,0,.3);
     }
-    .btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 12px #ff4da6;
-    }
-    .whatsapp { background: #25D366; }
-    .instagram { background: #ff4da6; }
-    .budget { background: #00e5ff; color:#111; }
-    .location { background: #4285F4; }
-
-    footer {
-      background: #111;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      border-top: 8px solid #ff4da6;
-      font-family: 'Montserrat', sans-serif;
-    }
-
-    @media(max-width:768px){
-      header h1{font-size:2.2em;padding:15px;}
-      h2{font-size:1.8em;}
-      .btn{font-size:0.9em;padding:10px 15px;}
-    }
-    @media(max-width:480px){
-      header{height:50vh;}
-      header h1{font-size:1.5em;}
-      .gallery{grid-template-columns:1fr;}
+    .btn:hover {transform:scale(1.08);box-shadow:0 0 20px #ff4da6;}
+    .whatsapp {background:#25D366;color:#fff;}
+    .instagram {background:#ff4da6;color:#fff;}
+    .budget {background:#00e5ff;color:#111;}
+    .location {background:#4285F4;color:#fff;}
+    footer {background:#111;color:#fff;text-align:center;padding:20px;border-top:4px solid #ff4da6;}
+    form input, form select, form textarea {
+      width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #ccc;
     }
   </style>
 </head>
 <body>
-  <header><h1>Espaço de Eventos Premium</h1></header>
+  <!-- Menu fixo -->
+  <header>
+    <a href="#galeria">📸 Galeria</a>
+    <a href="#orcamento">💼 Orçamento</a>
+    <a href="#contato">📱 Contato</a>
+  </header>
 
-  <section>
-    <h2>Sobre o Espaço</h2>
-    <p>Ambiente sofisticado e versátil para casamentos, festas corporativas e celebrações exclusivas. Infraestrutura moderna, estacionamento amplo e equipe especializada para experiências memoráveis.</p>
-  </section>
+  <!-- Hero Section -->
+  <div class="banner">
+    <h1>Espaço Aura 🎉</h1>
+    <p>O ambiente perfeito para sua festa inesquecível.</p>
+  </div>
 
-  <section>
-    <h2>Galeria</h2>
+  <!-- Galeria -->
+  <section id="galeria">
+    <h2>📸 Galeria</h2>
     <div class="gallery">
-      <img src="img/foto-patio.jpg" alt="Área de lazer com mesa de sinuca">
-      <img src="img/foto-piscina1.jpg" alt="Piscina com cascata e pátio">
-      <img src="img/foto-piscina2.jpg" alt="Piscina oval com área de convivência">
-      <img src="img/foto-banheiros.jpg" alt="Estrutura de banheiros e apoio">
+      <img src="https://drive.google.com/uc?export=view&id=1Z9YAUAAmDp-yRtyn1AXOPZdNTex2_z--" alt="Foto 1 - Espaço Aura">
+      <img src="https://drive.google.com/uc?export=view&id=1U4OyWdLmcZvscFbINqN2Q42gr1GWN67-" alt="Foto 2 - Espaço Aura">
+      <img src="https://drive.google.com/uc?export=view&id=1p5rYV2GM7CjVKmN4CJHDg2iPyl_RvbqQ" alt="Foto 3 - Espaço Aura">
+      <img src="https://drive.google.com/uc?export=view&id=14xt3RYw-mgKA3V-WjgoxF2A3j7DQxIq_" alt="Foto 4 - Espaço Aura">
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Entre em Contato</h2>
+  <!-- Orçamento -->
+  <section id="orcamento" class="budget-form">
+    <h2>💼 Solicite seu orçamento</h2>
+    <form>
+      <input type="text" placeholder="Nome" required>
+      <input type="email" placeholder="E-mail" required>
+      <input type="tel" placeholder="Telefone" required>
+      <select required>
+        <option value="">Tipo de festa</option>
+        <option>Aniversário 🎂</option>
+        <option>Formatura 🎓</option>
+        <option>Evento corporativo 🏢</option>
+        <option>Outro ✨</option>
+      </select>
+      <input type="number" placeholder="Número de convidados" required>
+      <textarea placeholder="Detalhes do evento" rows="4"></textarea>
+      <button type="submit" class="btn budget">Enviar Solicitação</button>
+    </form>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contact">
+    <h2>📱 Contato</h2>
     <p><strong>Telefone:</strong> (61) 98463-2242</p>
     <p><strong>Endereço:</strong> QD 154, LT 23, Parque Estrela Dalva XIII, Santo Antônio do Descoberto - GO</p>
-    <div class="buttons">
+    <div>
       <a href="https://wa.me/5561984632242" target="_blank"><button class="btn whatsapp">📱 WhatsApp</button></a>
       <a href="https://www.instagram.com/esp.aura13" target="_blank"><button class="btn instagram">📸 Instagram</button></a>
       <a href="https://www.google.com/maps/search/?api=1&query=-15.929550,-48.297512" target="_blank"><button class="btn location">📍 Ver Localização</button></a>
-      <button class="btn budget">💼 Solicite orçamento</button>
     </div>
   </section>
 
-  <footer><p>&copy; 2026 Espaço de Eventos Premium - Todos os direitos reservados</p></footer>
+  <!-- Rodapé -->
+  <footer><p>&copy; 2026 Espaço Aura 🎉 - Todos os direitos reservados</p></footer>
 </body>
 </html>

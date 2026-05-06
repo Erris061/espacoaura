@@ -12,8 +12,8 @@
 
     body {
       font-family: 'Montserrat', sans-serif;
-      background-color: #1c1c1c;
-      color: #eaeaea;
+      background-color: #1c1c1c; /* fundo escuro */
+      color: #333; /* texto padrão escuro para seções claras */
       line-height: 1.6;
     }
 
@@ -41,7 +41,7 @@
       padding: 50px 20px;
       max-width: 1200px;
       margin: auto;
-      background-color: #2a2a2a;
+      background-color: #f9f9f9; /* fundo claro para contraste */
       border-radius: 12px;
       margin-bottom: 30px;
     }
@@ -57,7 +57,7 @@
       text-align: center;
       margin-bottom: 20px;
       font-size: 1.1em;
-      color: #f0f0f0;
+      color: #333;
     }
 
     .gallery {
@@ -78,7 +78,7 @@
     }
 
     .contact {
-      background: #2a2a2a;
+      background: #f9f9f9; /* fundo claro */
       padding: 40px;
       border-radius: 15px;
       text-align: center;
@@ -87,6 +87,7 @@
     .contact p {
       margin: 10px 0;
       font-size: 1.1em;
+      color: #333;
     }
     .buttons {
       margin: 20px 0;
@@ -111,3 +112,59 @@
     .whatsapp { background: #25D366; }
     .instagram { background: #d63384; }
     .budget { background: #ff4081; }
+    .location { background: #4285F4; }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      border-top: 8px solid #d63384;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    @media(max-width:768px){
+      header h1{font-size:2.2em;padding:15px;}
+      h2{font-size:1.8em;}
+      .btn{font-size:0.9em;padding:10px 15px;}
+    }
+    @media(max-width:480px){
+      header{height:50vh;}
+      header h1{font-size:1.5em;}
+      .gallery{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+  <header><h1>Espaço de Eventos Premium</h1></header>
+
+  <section>
+    <h2>Sobre o Espaço</h2>
+    <p>Ambiente sofisticado e versátil para casamentos, festas corporativas e celebrações exclusivas. Infraestrutura moderna, estacionamento amplo e equipe especializada para experiências memoráveis.</p>
+  </section>
+
+  <section>
+    <h2>Galeria</h2>
+    <div class="gallery">
+      <img src="img/foto-patio.jpg" alt="Área de lazer com mesa de sinuca">
+      <img src="img/foto-piscina1.jpg" alt="Piscina com cascata e pátio">
+      <img src="img/foto-piscina2.jpg" alt="Piscina oval com área de convivência">
+      <img src="img/foto-banheiros.jpg" alt="Estrutura de banheiros e apoio">
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Entre em Contato</h2>
+    <p><strong>Telefone:</strong> (61) 98463-2242</p>
+    <p><strong>Endereço:</strong> Rua das Festas, 123 - Santo Antônio do Descoberto, GO</p>
+    <div class="buttons">
+      <a href="https://wa.me/5561984632242" target="_blank"><button class="btn whatsapp">📱 WhatsApp</button></a>
+      <a href="https://www.instagram.com/esp.aura13" target="_blank"><button class="btn instagram">📸 Instagram</button></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=-15.929550,-48.297512" target="_blank"><button class="btn location">📍 Ver Localização</button></a>
+      <button class="btn budget">💼 Solicite orçamento</button>
+    </div>
+  </section>
+
+  <footer><p>&copy; 2026 Espaço de Eventos Premium - Todos os direitos reservados</p></footer>
+</body>
+</html>

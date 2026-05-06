@@ -5,202 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Espaço de Eventos Premium</title>
   <meta name="description" content="Espaço de eventos sofisticado para casamentos, festas corporativas e celebrações exclusivas. Reserve já e viva momentos inesquecíveis.">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <!-- Fontes premium -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    /* Reset básico */
     * {margin:0; padding:0; box-sizing:border-box;}
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #fff;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(rgba(214,51,132,0.6), rgba(166,30,92,0.7)), url('foto-principal.jpg') no-repeat center center/cover;
-      height: 70vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      border-bottom: 8px solid #d63384;
-    }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5em;
-      background: rgba(0,0,0,0.5);
-      padding: 20px;
-      border-radius: 12px;
-      border: 3px solid #fff;
-    }
-
-    section {
-      padding: 50px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2em;
-      color: #d63384;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    p {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 1.1em;
-    }
-
-    /* Galeria */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 12px;
-      border: 4px solid #d63384;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.25);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 18px rgba(0,0,0,0.35);
-    }
-
-    /* Contato */
-    .contact {
-      background: #ffe6f0;
-      padding: 40px;
-      border-radius: 15px;
-      text-align: center;
-      border: 6px solid #d63384;
-    }
-    .contact p {
-      margin: 10px 0;
-      font-size: 1.1em;
-    }
-    .buttons {
-      margin: 20px 0;
-    }
-    .btn {
-      border: none;
-      padding: 12px 20px;
-      font-size: 1em;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      margin: 8px;
-      font-family: 'Poppins', sans-serif;
-      color: white;
-      border: 2px solid #fff;
-    }
-    .btn:hover {
-      transform: scale(1.05);
-      opacity: 0.9;
-    }
-    .whatsapp { background: #25D366; }
-    .instagram { background: #d63384; }
-    .visit { background: #a61e5c; }
-    .budget { background: #ff4081; }
-    .send { background: #d63384; }
-
-    form {
-      margin-top: 20px;
-      display: grid;
-      gap: 15px;
-    }
-    input, textarea {
-      padding: 12px;
-      border: 2px solid #d63384;
-      border-radius: 8px;
-      font-size: 1em;
-      width: 100%;
-    }
-
-    iframe {
-      width: 100%;
-      height: 350px;
-      border: 4px solid #d63384;
-      border-radius: 12px;
-      margin-top: 30px;
-    }
-
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      border-top: 8px solid #d63384;
-    }
-
-    /* Responsividade */
-    @media (max-width:768px) {
-      header h1 {font-size: 2em; padding: 15px;}
-      h2 {font-size: 1.8em;}
-      .btn {font-size: 0.9em; padding: 10px 15px;}
-    }
-    @media (max-width:480px) {
-      header {height: 50vh;}
-      header h1 {font-size: 1.5em;}
-      .gallery {grid-template-columns: 1fr;}
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Espaço de Eventos Premium</h1>
-  </header>
-
-  <section>
-    <h2>Sobre o Espaço</h2>
-    <p>Ambiente sofisticado e versátil para casamentos, festas corporativas e celebrações exclusivas. Infraestrutura moderna, estacionamento amplo e equipe especializada para experiências memoráveis.</p>
-  </section>
-
-  <section>
-    <h2>Galeria</h2>
-    <div class="gallery">
-      <img src="foto-patio.jpg" alt="Área de lazer com mesa de sinuca">
-      <img src="foto-piscina1.jpg" alt="Piscina com cascata e pátio">
-      <img src="foto-piscina2.jpg" alt="Piscina oval com área de convivência">
-      <img src="foto-banheiros.jpg" alt="Estrutura de banheiros e apoio">
-      <img src="entrada.jpg" alt="Entrada principal do espaço">
-      <img src="salão.jpg" alt="Salão principal decorado">
-      <img src="area-externa.jpg" alt="Área externa iluminada">
-      <img src="buffet.jpg" alt="Buffet e lounge sofisticado">
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2>Entre em Contato</h2>
-    <p><strong>Telefone:</strong> (61) 98463-2242</p>
-    <p><strong>Email:</strong> contato@espacoeventos.com.br</p>
-    <p><strong>Endereço:</strong> Rua das Festas, 123 - Santo Antônio do Descoberto, GO</p>
-    
-    <div class="buttons">
-      <a href="https://wa.me/5561984632242" target="_blank"><button class="btn whatsapp">📱 WhatsApp</button></a>
-      <a href="https://www.instagram.com/esp.aura13?igsh=MXJtcWdwOXYwd2VsMw==" target="_blank"><button class="btn instagram">📸 Instagram</button></a>
-      <button class="btn visit">📅 Agende sua visita</button>
-      <button class="btn budget">💼 Solicite orçamento</button>
-    </div>
-
-    <form action="enviar.php" method="post">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu email" required>
-      <input type="tel" name="telefone" placeholder="Seu telefone" required>
-      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
-      <button type="submit" class="btn send">Enviar Mensagem</button>
-    </form>
-
-    <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen="" loading="lazy"></iframe>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Espaço de Eventos Premium - Todos os direitos reservados</p>
-  </footer>
-</body>
-</html>
+    body {font-family:'Montserrat',sans-serif;background:#121212;color:#f5f5f5;line-height:1.6;}
+    header {background:linear-gradient(rgba(214,51,132,0.7),rgba(166,30,92,0.8)),url('img/foto-piscina1.jpg') center/cover;height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;color:white;border-bottom:8px solid #d63384;}
+    header h1 {font-family:'Cinzel Decorative',serif;font-size:3em;padding:20px;border-radius:15px;border:3px solid #d63384;letter-spacing:2px;}
+    section {padding:50px 20px;max-width:1200px;margin:auto;}
+    h2 {font-family:'Cinzel Decorative',serif;font-size:2.2em;color:#d63384;margin-bottom:20px;text-align:center;letter-spacing:1px;}
+    p {text-align:center;margin-bottom:20px;font-size:1.1em;}
+    .gallery {display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+    .gallery img {width:100%;border-radius:20px;border:3px solid #d63384;box-shadow:0 6px 12px rgba(0,0,0,0.5);transition:transform 0.3s,box-shadow 0.3s;}
+    .gallery img:hover {transform:scale(1.05);box-shadow:0 12px 20px rgba(214,51,132,0.7);}
+    .contact {background:#1e1e1e;padding:40px;border-radius:15px;text-align:center;border:6px solid #d63384;}
+    .contact p {margin:10px 0;font-size:1.1em;}
+    .buttons {margin:20px 0;}
+    .btn {border:none;padding:14px 22px;font-size:1.1em;border-radius:30px;cursor:pointer;transition:all 0.3s ease;margin:10px;font-family:'Montserrat',sans-serif;color:white;font-weight:600;letter-spacing:0.5px;}
+    .btn:hover {transform:scale(1.05);box-shadow:0 0 12px #d63384;}
+    .whatsapp {background:#25D366;}
+    .instagram {background:#d63384;}
+    .budget {background:#ff4081;}
+    .location {background:#4285F4;}
+    footer {background:#222;color:#fff;text-align:center;padding:20px;border-top:8px solid #d63384;font-family:'Montserrat',sans-serif;}
+    @media(max-width:768px){header h1{font-size:2.2em;padding:15px;}h2{font-size

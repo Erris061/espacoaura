@@ -9,50 +9,35 @@
   <style>
     body {
       font-family:'Montserrat',sans-serif;
-      background: url('frente.jpeg') no-repeat center center fixed;
-      background-size: cover;
-      color:#fff;
+      background-color:#f5f5f5; /* cor suave no fundo */
+      color:#333;
       margin:0;
     }
-    @media (max-width: 768px) {
-      body {
-        background-attachment: scroll;
-        background-position: center top;
-        background-size: cover;
-      }
-      section {
-        background: rgba(0,0,0,0.85);
-      }
-      .gallery img {
-        height: auto;
-        object-fit: contain;
-      }
-    }
-    header {position:fixed;top:0;width:100%;background:rgba(0,0,0,0.8);padding:15px;text-align:center;z-index:1000;}
+    header {position:fixed;top:0;width:100%;background:#222;padding:15px;text-align:center;z-index:1000;}
     header a {color:#fff;margin:0 15px;text-decoration:none;font-weight:600;}
     header a:hover {color:#ff4da6;}
-    .banner {background:rgba(0,0,0,0.6);text-align:center;padding:100px 20px;color:#fff;}
-    .banner h1 {font-family:'Bebas Neue',sans-serif;font-size:64px;letter-spacing:3px;text-transform:uppercase;}
-    .banner p {font-size:20px;color:#eee;margin-top:10px;}
-    section {background:rgba(0,0,0,0.7);padding:40px;border-radius:12px;margin:80px auto;max-width:1000px;}
-    section h2 {color:#ff4da6;text-align:center;margin-bottom:20px;font-size:32px;font-family:'Bebas Neue',sans-serif;}
-    .gallery {display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;}
-    .gallery img {width:100%;border-radius:10px;border:2px solid #00e5ff;transition:.3s;object-fit:cover;height:160px;}
+    .banner {background:#ff4da6;text-align:center;padding:80px 20px;color:#fff;}
+    .banner h1 {font-family:'Bebas Neue',sans-serif;font-size:56px;letter-spacing:2px;text-transform:uppercase;}
+    .banner p {font-size:18px;color:#fff;margin-top:10px;}
+    section {background:#fff;padding:30px;border-radius:12px;margin:80px auto;max-width:1000px;box-shadow:0 0 10px rgba(0,0,0,0.1);}
+    section h2 {color:#ff4da6;text-align:center;margin-bottom:20px;font-size:28px;font-family:'Bebas Neue',sans-serif;}
+    .gallery {display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;}
+    .gallery img {width:100%;border-radius:10px;border:2px solid #00e5ff;transition:.3s;object-fit:cover;height:140px;}
     .gallery img:hover {transform:scale(1.05);}
     .contact {text-align:center;}
     .contact p {margin:8px 0;}
-    .btn {border:none;padding:14px 26px;border-radius:30px;margin:8px;font-weight:600;cursor:pointer;transition:.3s;box-shadow:0 0 10px rgba(0,0,0,.3);}
+    .btn {border:none;padding:14px 26px;border-radius:30px;margin:8px;font-weight:600;cursor:pointer;transition:.3s;box-shadow:0 0 10px rgba(0,0,0,.2);}
     .btn:hover {transform:scale(1.08);box-shadow:0 0 20px #ff4da6;}
     .whatsapp {background:#25D366;color:#fff;font-size:18px;}
     .instagram {background:#ff4da6;color:#fff;}
     .budget {background:#00e5ff;color:#111;}
     .location {background:#4285F4;color:#fff;}
-    footer {background:rgba(0,0,0,0.8);color:#fff;text-align:center;padding:15px;border-top:4px solid #ff4da6;}
+    footer {background:#222;color:#fff;text-align:center;padding:15px;border-top:4px solid #ff4da6;}
     form {
-      background:rgba(255,255,255,0.1);
-      padding:30px;
+      background:#f9f9f9;
+      padding:25px;
       border-radius:12px;
-      box-shadow:0 0 20px rgba(0,0,0,0.5);
+      box-shadow:0 0 15px rgba(0,0,0,0.1);
     }
     form input, form select, form textarea {
       width:100%;padding:14px;margin:10px 0;border-radius:8px;border:1px solid #ccc;font-size:16px;
